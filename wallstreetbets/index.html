@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>r/WallStreetBets + r/Stocks counter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-[#A1A1A1] text-stone-900">
+    <main class="min-h-screen flex items-center justify-center px-10 pt-36">
+      <div class="max-w-3xl space-y-6 text-left">
+        <div class="flex gap-4 text-sm">
+          <a class="text-[#E8AEBA] underline underline-offset-4" href="../">home</a>
+        </div>
+        <header class="space-y-2">
+          <p class="text-2xl text-stone-1000">
+            r/WallStreetBets + r/Stocks stock mentions counter
+          </p>
+          <p class="text-sm text-stone-700">
+            Counts stock mentions from comments + posts on r/WallStreetBets and r/Stocks. Provides counts over a single day
+            and week + live stock information (price, price change...etc).
+          </p>
+        </header>
+        <div class="mt-6">
+          <video class="w-full rounded-lg shadow-lg" controls preload="metadata">
+            <source src="./reddittrial.mov" type="video/quicktime" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="mt-6 space-y-3 text-left">
+          <p class="text-sm text-stone-900">stack: python, react.js, tailwind, mySQL</p>
+        </div>
+        <div class="mt-6 space-y-3 text-left">
+          <p class="text-sm text-stone-900">motivation:</p>
+          <ul class="list-disc space-y-1 pl-5 text-sm text-stone-700">
+            <li>
+              <a
+                class="underline underline-offset-4"
+                href="https://www.reddit.com/r/wallstreetbets/comments/1puy95u/how_did_wsbs_stock_picks_of_2025_perform/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                how did WSB's stock picks of 2025 perform?
+              </a>
+            </li>
+            <li>
+              <a
+                class="underline underline-offset-4"
+                href="https://www.reddit.com/r/wallstreetbets/comments/1pvgo79/i_copied_wsb_top_picks_of_2025_and_yeah_77_that/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                copying WSB's top picks of 2025 --> ~77% return
+              </a>
+            </li>
+            <li>
+              a personal annecdote, when i first started getting interested in investing, i found some early due diligence
+              on Rocket Lab ($RKLB) and saw that it was mentioned frequently in comments. bought it in nov 2024 for ~$17
+              USD. it ebbs around $90 USD now!
+            </li>
+            <li>found some similar success in finding $NBIS early</li>
+          </ul>
+        </div>
+        <div class="mt-6 space-y-3 text-left">
+          <p class="text-sm text-stone-900">in the future:</p>
+          <ul class="list-disc space-y-1 pl-5 text-sm text-stone-700">
+            <li>integrate an LLM API to provide AI-generated explanations behind discussion</li>
+            <li>email results / display results in a widget as opposed to a website for easy access</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
